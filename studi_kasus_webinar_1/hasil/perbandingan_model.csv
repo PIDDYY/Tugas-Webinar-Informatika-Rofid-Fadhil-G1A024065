@@ -1,0 +1,5 @@
+model,accuracy,precision,recall,f1_score
+Baseline mayoritas,0.7750,0.0000,0.0000,0.0000
+Logistic Regression,0.6917,0.4000,0.7407,0.5195
+Decision Tree,0.5583,0.2593,0.5185,0.3457
+Random Forest,0.6417,0.3000,0.4444,0.3582

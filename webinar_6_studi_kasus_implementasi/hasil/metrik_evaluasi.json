@@ -1,0 +1,117 @@
+{
+  "akurasi": 0.9881,
+  "macro_f1": 0.9881,
+  "per_kelas": {
+    "Banjir / gangguan alami": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "jumlah_tes": 12
+    },
+    "Kebakaran hutan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "jumlah_tes": 12
+    },
+    "Pembangunan jalan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "jumlah_tes": 12
+    },
+    "Penebangan selektif": {
+      "precision": 1.0,
+      "recall": 0.9167,
+      "f1": 0.9565,
+      "jumlah_tes": 12
+    },
+    "Pertambangan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "jumlah_tes": 12
+    },
+    "Pertanian skala besar": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "jumlah_tes": 12
+    },
+    "Pertanian skala kecil": {
+      "precision": 0.9231,
+      "recall": 1.0,
+      "f1": 0.96,
+      "jumlah_tes": 12
+    }
+  },
+  "confusion_matrix": {
+    "Banjir / gangguan alami": {
+      "Banjir / gangguan alami": 12,
+      "Kebakaran hutan": 0,
+      "Pembangunan jalan": 0,
+      "Penebangan selektif": 0,
+      "Pertambangan": 0,
+      "Pertanian skala besar": 0,
+      "Pertanian skala kecil": 0
+    },
+    "Kebakaran hutan": {
+      "Banjir / gangguan alami": 0,
+      "Kebakaran hutan": 12,
+      "Pembangunan jalan": 0,
+      "Penebangan selektif": 0,
+      "Pertambangan": 0,
+      "Pertanian skala besar": 0,
+      "Pertanian skala kecil": 0
+    },
+    "Pembangunan jalan": {
+      "Banjir / gangguan alami": 0,
+      "Kebakaran hutan": 0,
+      "Pembangunan jalan": 12,
+      "Penebangan selektif": 0,
+      "Pertambangan": 0,
+      "Pertanian skala besar": 0,
+      "Pertanian skala kecil": 0
+    },
+    "Penebangan selektif": {
+      "Banjir / gangguan alami": 0,
+      "Kebakaran hutan": 0,
+      "Pembangunan jalan": 0,
+      "Penebangan selektif": 11,
+      "Pertambangan": 0,
+      "Pertanian skala besar": 0,
+      "Pertanian skala kecil": 1
+    },
+    "Pertambangan": {
+      "Banjir / gangguan alami": 0,
+      "Kebakaran hutan": 0,
+      "Pembangunan jalan": 0,
+      "Penebangan selektif": 0,
+      "Pertambangan": 12,
+      "Pertanian skala besar": 0,
+      "Pertanian skala kecil": 0
+    },
+    "Pertanian skala besar": {
+      "Banjir / gangguan alami": 0,
+      "Kebakaran hutan": 0,
+      "Pembangunan jalan": 0,
+      "Penebangan selektif": 0,
+      "Pertambangan": 0,
+      "Pertanian skala besar": 12,
+      "Pertanian skala kecil": 0
+    },
+    "Pertanian skala kecil": {
+      "Banjir / gangguan alami": 0,
+      "Kebakaran hutan": 0,
+      "Pembangunan jalan": 0,
+      "Penebangan selektif": 0,
+      "Pertambangan": 0,
+      "Pertanian skala besar": 0,
+      "Pertanian skala kecil": 12
+    }
+  },
+  "jumlah_data_tes": 84,
+  "k": 5,
+  "seed": 42,
+  "jumlah_data_latih": 336
+}

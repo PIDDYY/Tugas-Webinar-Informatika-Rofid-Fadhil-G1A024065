@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="740" viewBox="0 0 1120 740">
+<rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="52" y="43" font-family="Arial" font-size="22" font-weight="bold" fill="#1c334a">Peta Sebaran Kandidat Lokasi (Data Simulasi)</text>
+<text x="52" y="66" font-family="Arial" font-size="13" fill="#536a81">Koordinat ilustratif area Bengkulu • bukan peta jalan • arah utara di atas</text>
+<line x1="293.2" y1="82.0" x2="293.2" y2="658.0" stroke="#dfe6ed"/>
+<line x1="293.2" y1="82.0" x2="826.8" y2="82.0" stroke="#dfe6ed"/>
+<line x1="399.9" y1="82.0" x2="399.9" y2="658.0" stroke="#dfe6ed"/>
+<line x1="293.2" y1="197.2" x2="826.8" y2="197.2" stroke="#dfe6ed"/>
+<line x1="506.6" y1="82.0" x2="506.6" y2="658.0" stroke="#dfe6ed"/>
+<line x1="293.2" y1="312.4" x2="826.8" y2="312.4" stroke="#dfe6ed"/>
+<line x1="613.4" y1="82.0" x2="613.4" y2="658.0" stroke="#dfe6ed"/>
+<line x1="293.2" y1="427.6" x2="826.8" y2="427.6" stroke="#dfe6ed"/>
+<line x1="720.1" y1="82.0" x2="720.1" y2="658.0" stroke="#dfe6ed"/>
+<line x1="293.2" y1="542.8" x2="826.8" y2="542.8" stroke="#dfe6ed"/>
+<line x1="826.8" y1="82.0" x2="826.8" y2="658.0" stroke="#dfe6ed"/>
+<line x1="293.2" y1="658.0" x2="826.8" y2="658.0" stroke="#dfe6ed"/>
+<polygon points="593.6,410.1 606.6,423.1 593.6,436.1 580.6,423.1" fill="#7250ad" stroke="white" stroke-width="2"/>
+<text x="609.6" y="410.1" font-family="Arial" font-size="13" font-weight="bold" fill="#593b8c">Gudang</text>
+<rect x="553.0" y="299.0" width="16" height="16" fill="#ec9741" stroke="white" stroke-width="2"/>
+<text x="572.0" y="311.0" font-family="Arial" font-size="12" fill="#7a4f21">T1</text>
+<rect x="510.4" y="465.6" width="16" height="16" fill="#ec9741" stroke="white" stroke-width="2"/>
+<text x="529.4" y="477.6" font-family="Arial" font-size="12" fill="#7a4f21">T2</text>
+<rect x="689.5" y="355.6" width="16" height="16" fill="#ec9741" stroke="white" stroke-width="2"/>
+<text x="708.5" y="367.6" font-family="Arial" font-size="12" fill="#7a4f21">T3</text>
+<circle cx="522.4" cy="273.3" r="10" fill="#c9575c" stroke="white" stroke-width="2"/>
+<text x="535.4" y="264.3" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">A</text>
+<circle cx="674.8" cy="351.7" r="10" fill="#c9575c" stroke="white" stroke-width="2"/>
+<text x="687.8" y="342.7" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">E</text>
+<circle cx="730.2" cy="258.4" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="743.2" y="249.4" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">G</text>
+<circle cx="486.8" cy="576.8" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="499.8" y="567.8" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">F</text>
+<circle cx="629.3" cy="141.4" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="642.3" y="132.4" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">J</text>
+<circle cx="348.3" cy="186.1" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="361.3" y="177.1" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">D</text>
+<circle cx="706.4" cy="489.5" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="719.4" y="480.5" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">C</text>
+<circle cx="536.3" cy="410.2" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="549.3" y="401.2" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">B</text>
+<circle cx="771.7" cy="598.6" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="784.7" y="589.6" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">I</text>
+<circle cx="350.2" cy="414.1" r="17" fill="none" stroke="#2479a9" stroke-width="3" stroke-dasharray="5 3"/>
+<circle cx="350.2" cy="414.1" r="10" fill="#267d68" stroke="white" stroke-width="2"/>
+<text x="363.2" y="405.1" font-family="Arial" font-size="13" font-weight="bold" fill="#243e50">H</text>
+<text x="994" y="105" font-family="Arial" font-weight="bold" font-size="16" fill="#34495e">N ↑</text>
+<line x1="70" y1="670" x2="159.1" y2="670" stroke="#34495e" stroke-width="4"/>
+<line x1="70" y1="663" x2="70" y2="677" stroke="#34495e" stroke-width="2"/>
+<line x1="159.1" y1="663" x2="159.1" y2="677" stroke="#34495e" stroke-width="2"/>
+<text x="70" y="658" font-family="Arial" font-size="12" fill="#34495e">1 km (garis lurus)</text>
+<rect x="741" y="615" rx="9" width="336" height="100" fill="white" stroke="#dee5ed"/>
+<circle cx="760" cy="634" r="7" fill="#267d68"/><text x="777" y="638" font-family="Arial" font-size="12">Layak</text>
+<circle cx="874" cy="634" r="7" fill="#c9575c"/><text x="891" y="638" font-family="Arial" font-size="12">Tidak layak</text>
+<rect x="753" y="653" width="14" height="14" fill="#ec9741"/><text x="777" y="665" font-family="Arial" font-size="12">Toko eksisting</text>
+<polygon points="883,651 893,661 883,671 873,661" fill="#7250ad"/><text x="902" y="665" font-family="Arial" font-size="12">Gudang</text>
+<text x="755" y="695" font-family="Arial" font-size="12" fill="#2479a9">Lingkaran biru: rekomendasi teratas</text>
+</svg>

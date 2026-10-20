@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Studi kasus webinar 5: dashboard penjualan yang berpusat pada pengguna dan visualisasi interaktif.">
+  <title>Dashboard Toko Sahabat | Webinar 5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+  <header class="site-head">
+    <div class="header-inside">
+      <div>
+        <span class="eyebrow">STUDI KASUS · WEBINAR 5</span>
+        <h1>Dashboard Toko Sahabat</h1>
+        <p>Interaksi manusia dan komputer & visualisasi data</p>
+      </div>
+      <div class="head-label" aria-label="Data pembelajaran, bukan data asli">DATA SIMULASI</div>
+    </div>
+  </header>
+  <main id="konten" class="content">
+    <section class="panel filters" aria-labelledby="judul-filter">
+      <div class="section-header">
+        <div><h2 id="judul-filter">Temukan informasi yang Anda butuhkan</h2><p>Pilih periode, wilayah, atau kategori untuk memperbarui seluruh dashboard.</p></div>
+      </div>
+      <div class="filter-grid">
+        <label for="bulan">Periode
+          <select id="bulan"><option value="Semua">Semua periode</option></select>
+        </label>
+        <label for="wilayah">Wilayah
+          <select id="wilayah"><option value="Semua">Semua wilayah</option></select>
+        </label>
+        <label for="kategori">Kategori barang
+          <select id="kategori"><option value="Semua">Semua kategori</option></select>
+        </label>
+        <div class="filter-actions">
+          <button id="reset" type="button" class="btn secondary">Atur ulang</button>
+          <button id="unduh" type="button" class="btn primary">Unduh CSV</button>
+        </div>
+      </div>
+      <p id="status" role="status" aria-live="polite">Memuat data contoh...</p>
+    </section>
+
+    <section aria-label="Ringkasan indikator utama" class="kpi-grid">
+      <article class="panel kpi"><h2>Total omzet</h2><p id="omzet" class="kpi-value">—</p><span>Jumlah penjualan dalam rupiah</span></article>
+      <article class="panel kpi"><h2>Transaksi</h2><p id="transaksi" class="kpi-value">—</p><span>Jumlah transaksi tercatat</span></article>
+      <article class="panel kpi"><h2>Keluhan</h2><p id="keluhan" class="kpi-value">—</p><span>Jumlah keluhan pelanggan</span></article>
+      <article class="panel kpi"><h2>Rasio keluhan</h2><p id="rasio" class="kpi-value">—</p><span>Keluhan dibanding transaksi</span></article>
+    </section>
+
+    <section class="charts">
+      <article class="panel">
+        <div class="section-header"><div><h2>Tren omzet harian</h2><p>Grafik garis membantu melihat perubahan dari waktu ke waktu.</p></div></div>
+        <div class="svg-holder"><svg id="grafikTren" viewBox="0 0 740 260" role="img" aria-label="Tren omzet penjualan. Rincian tersedia pada tabel harian di bawah."></svg></div>
+        <p class="note">Arah tren dapat berubah ketika filter dipilih. Angka tepatnya tersedia di tabel.</p>
+      </article>
+      <article class="panel">
+        <div class="section-header"><div><h2>Omzet per kategori</h2><p>Grafik batang untuk membandingkan kelompok barang.</p></div></div>
+        <div id="grafikKategori" class="bars" role="group" aria-label="Perbandingan omzet berdasarkan kategori barang"></div>
+      </article>
+    </section>
+
+    <section class="panel" aria-labelledby="judul-tabel">
+      <div class="section-header"><div><h2 id="judul-tabel">Detail harian</h2><p>Alternatif berbasis teks untuk membaca nilai grafik dengan tepat.</p></div></div>
+      <div class="table-wrap">
+        <table><caption>Agregasi transaksi, omzet, dan keluhan berdasarkan tanggal dengan filter aktif</caption>
+          <thead><tr><th scope="col">Tanggal</th><th scope="col" class="number">Transaksi</th><th scope="col" class="number">Omzet</th><th scope="col" class="number">Keluhan</th></tr></thead>
+          <tbody id="tabel-harian"><tr><td colspan="4">Memuat data...</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    <p class="footer-note">Data dibuat khusus untuk simulasi tugas kuliah, bukan catatan transaksi toko sebenarnya. Tidak ada pengiriman data ke server luar.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+HASIL STUDI KASUS WEBINAR 2 — MINI HPC
+Judul webinar: Bridging Global Infrastructure to Address Local Challenges in HPC
+Studi kasus: simulasi peluang genangan menggunakan Monte Carlo + multiprocessing.
+CATATAN: Seluruh angka merupakan asumsi/sintetis, bukan pengukuran atau prakiraan banjir.
+
+Jumlah wilayah: 9
+Jumlah simulasi per wilayah: 2000
+Total simulasi: 18000
+Mode: bandingkan
+Seed: 2026
+
+PERSENTASE SKENARIO DENGAN GENANGAN DI ATAS AMBANG (BUKAN RISIKO RESMI):
+- Sungai Serut: 75.60% (Tinggi)
+- Teluk Segara: 73.85% (Tinggi)
+- Kampung Melayu: 68.70% (Tinggi)
+- Muara Bangkahulu: 67.35% (Tinggi)
+- Ratu Samban: 52.00% (Sedang)
+- Gading Cempaka: 48.05% (Sedang)
+- Ratu Agung: 34.25% (Rendah)
+- Singaran Pati: 10.70% (Rendah)
+- Selebar: 0.00% (Rendah)
+
+KECEPATAN PENGOLAHAN:
+- Serial: 0.2032 detik
+- Paralel (2 proses): 0.1348 detik
+- Faktor percepatan (serial / paralel): 1.51x
+- Cek hasil serial == paralel: LULUS (identik)
+
+INTERPRETASI:
+Angka merupakan frekuensi kejadian yang melewati ambang dalam kumpulan hujan sintetis.
+Nilai lebih tinggi hanya berarti lebih sering tergenang MENURUT ASUMSI MODEL INI.
+Paralel dapat lebih lambat pada tugas kecil karena ada biaya memulai proses.
+Tidak memperhitungkan topografi, aliran antarkawasan, tanah nyata, sungai, pasang laut, atau data BMKG.

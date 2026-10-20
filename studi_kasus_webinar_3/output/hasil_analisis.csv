@@ -1,0 +1,11 @@
+﻿kode,nama,lat,lon,penduduk_1km,sewa_juta_bulan,jarak_toko_km,jarak_gudang_km,skor_penduduk,skor_jarak_toko,skor_logistik,skor_sewa,skor_total,status,alasan,peringkat
+H,Zona H (simulasi),-3.8018,102.2458,8600,6.8,2.001,2.731,80.0,56.55,65.86,57.78,67.98,LAYAK,Memenuhi syarat awal,1
+I,Zona I (simulasi),-3.8204,102.2884,6400,5.7,2.764,2.804,48.57,89.72,64.95,70.0,65.35,LAYAK,Memenuhi syarat awal,2
+B,Zona B (simulasi),-3.8014,102.2646,9300,9.8,0.739,0.66,90.0,1.7,91.76,24.44,58.44,LAYAK,Memenuhi syarat awal,3
+C,Zona C (simulasi),-3.8094,102.2818,7200,5.9,1.416,1.468,60.0,31.12,81.65,67.78,58.28,LAYAK,Memenuhi syarat awal,4
+D,Zona D (simulasi),-3.7788,102.2456,5400,4.9,2.744,3.825,34.29,88.88,52.18,78.89,58.2,LAYAK,Memenuhi syarat awal,5
+J,Zona J (simulasi),-3.7743,102.274,5900,5.4,2.009,3.183,41.43,56.89,60.21,73.33,53.84,LAYAK,Memenuhi syarat awal,6
+F,Zona F (simulasi),-3.8182,102.2596,6800,6.1,1.21,2.099,54.29,22.16,73.76,65.56,51.84,LAYAK,Memenuhi syarat awal,7
+G,Zona G (simulasi),-3.7861,102.2842,6100,5.1,1.234,2.398,44.29,23.23,70.02,76.67,49.03,LAYAK,Memenuhi syarat awal,8
+E,Zona E (simulasi),-3.7955,102.2786,8800,8.1,0.288,1.212,82.86,0.0,84.85,43.33,56.61,TIDAK LAYAK,Terlalu dekat toko lain,
+A,Zona A (simulasi),-3.7876,102.2632,7800,7.4,0.575,1.859,68.57,0.0,76.76,51.11,50.45,TIDAK LAYAK,Terlalu dekat toko lain,

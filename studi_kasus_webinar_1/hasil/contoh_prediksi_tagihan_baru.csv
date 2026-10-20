@@ -1,0 +1,4 @@
+nilai_tagihan,termin_hari,riwayat_telat_6bln,lama_pelanggan_bulan,segmen_pelanggan,prediksi_terlambat,hasil_prediksi
+8000000,30,0,60,Korporat,0,Tepat waktu
+65000000,14,4,5,UMKM,1,Berisiko terlambat
+22000000,30,2,19,Ritel,0,Tepat waktu

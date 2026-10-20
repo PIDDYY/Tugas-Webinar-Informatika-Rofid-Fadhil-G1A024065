@@ -1,0 +1,26 @@
+STUDI KASUS GIS: PEMILIHAN LOKASI TOKO (SIMULASI)
+=======================================================
+Semua data dan lokasi pada proyek ini adalah DUMMY, bukan hasil survei lapangan.
+Jarak dihitung secara garis lurus (Haversine), bukan jarak berkendara.
+Syarat awal: jarak toko >= 0.70 km, jarak gudang <= 10.00 km.
+Bobot: penduduk 40%, jarak ke toko 25%, logistik 20%, biaya sewa 15%.
+Jumlah kandidat: 10 | Layak: 8 | Tidak layak: 2
+
+PERINGKAT KANDIDAT LAYAK:
+1. H - Zona H (simulasi) | Skor 67.98/100 | Toko terdekat 2.00 km | Gudang 2.73 km
+2. I - Zona I (simulasi) | Skor 65.35/100 | Toko terdekat 2.76 km | Gudang 2.80 km
+3. B - Zona B (simulasi) | Skor 58.44/100 | Toko terdekat 0.74 km | Gudang 0.66 km
+4. C - Zona C (simulasi) | Skor 58.28/100 | Toko terdekat 1.42 km | Gudang 1.47 km
+5. D - Zona D (simulasi) | Skor 58.20/100 | Toko terdekat 2.74 km | Gudang 3.83 km
+6. J - Zona J (simulasi) | Skor 53.84/100 | Toko terdekat 2.01 km | Gudang 3.18 km
+7. F - Zona F (simulasi) | Skor 51.84/100 | Toko terdekat 1.21 km | Gudang 2.10 km
+8. G - Zona G (simulasi) | Skor 49.03/100 | Toko terdekat 1.23 km | Gudang 2.40 km
+
+REKOMENDASI: H - Zona H (simulasi) (67.98/100).
+
+KANDIDAT TIDAK LAYAK:
+- E (Zona E (simulasi)): Terlalu dekat toko lain
+- A (Zona A (simulasi)): Terlalu dekat toko lain
+
+CATATAN: Hasil hanyalah latihan analisis spasial, bukan rekomendasi bisnis nyata.
+Evaluasi dunia nyata membutuhkan data aktual, rute jalan, izin, banjir, pesaing, dan survei lapangan.

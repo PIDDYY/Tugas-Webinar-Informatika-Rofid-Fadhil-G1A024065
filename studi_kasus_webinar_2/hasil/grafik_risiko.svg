@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="508" viewBox="0 0 960 508">
+<rect width="960" height="100%" fill="#fafbff"/>
+<text x="40" y="46" font-family="Arial" font-size="24" font-weight="bold" fill="#212b45">Simulasi Risiko Genangan — Wilayah Bengkulu</text>
+<text x="40" y="72" font-family="Arial" font-size="13" fill="#586174">Data sintetis • Persentase skenario yang melewati ambang • Bukan prakiraan resmi</text>
+<line x1="320" y1="92" x2="880" y2="92" stroke="#cfd5e2"/>
+<line x1="320.0" y1="93" x2="320.0" y2="485" stroke="#e4e7ef"/>
+<text x="320.0" y="500" fill="#6b7280" font-family="Arial" text-anchor="middle" font-size="12">0%</text>
+<line x1="460.0" y1="93" x2="460.0" y2="485" stroke="#e4e7ef"/>
+<text x="460.0" y="500" fill="#6b7280" font-family="Arial" text-anchor="middle" font-size="12">25%</text>
+<line x1="600.0" y1="93" x2="600.0" y2="485" stroke="#e4e7ef"/>
+<text x="600.0" y="500" fill="#6b7280" font-family="Arial" text-anchor="middle" font-size="12">50%</text>
+<line x1="740.0" y1="93" x2="740.0" y2="485" stroke="#e4e7ef"/>
+<text x="740.0" y="500" fill="#6b7280" font-family="Arial" text-anchor="middle" font-size="12">75%</text>
+<line x1="880.0" y1="93" x2="880.0" y2="485" stroke="#e4e7ef"/>
+<text x="880.0" y="500" fill="#6b7280" font-family="Arial" text-anchor="middle" font-size="12">100%</text>
+<text x="40" y="133" font-family="Arial" font-size="15" fill="#273449">Sungai Serut</text>
+<rect x="320" y="116" width="423.36" height="23" rx="4" fill="#d94b53"/>
+<text x="753.36" y="133" font-family="Arial" font-size="13" fill="#273449">75.6%</text>
+<text x="40" y="175" font-family="Arial" font-size="15" fill="#273449">Teluk Segara</text>
+<rect x="320" y="158" width="413.56" height="23" rx="4" fill="#d94b53"/>
+<text x="743.56" y="175" font-family="Arial" font-size="13" fill="#273449">73.8%</text>
+<text x="40" y="217" font-family="Arial" font-size="15" fill="#273449">Kampung Melayu</text>
+<rect x="320" y="200" width="384.72" height="23" rx="4" fill="#d94b53"/>
+<text x="714.72" y="217" font-family="Arial" font-size="13" fill="#273449">68.7%</text>
+<text x="40" y="259" font-family="Arial" font-size="15" fill="#273449">Muara Bangkahulu</text>
+<rect x="320" y="242" width="377.16" height="23" rx="4" fill="#d94b53"/>
+<text x="707.16" y="259" font-family="Arial" font-size="13" fill="#273449">67.3%</text>
+<text x="40" y="301" font-family="Arial" font-size="15" fill="#273449">Ratu Samban</text>
+<rect x="320" y="284" width="291.20" height="23" rx="4" fill="#e3a73d"/>
+<text x="621.20" y="301" font-family="Arial" font-size="13" fill="#273449">52.0%</text>
+<text x="40" y="343" font-family="Arial" font-size="15" fill="#273449">Gading Cempaka</text>
+<rect x="320" y="326" width="269.08" height="23" rx="4" fill="#e3a73d"/>
+<text x="599.08" y="343" font-family="Arial" font-size="13" fill="#273449">48.0%</text>
+<text x="40" y="385" font-family="Arial" font-size="15" fill="#273449">Ratu Agung</text>
+<rect x="320" y="368" width="191.80" height="23" rx="4" fill="#389d82"/>
+<text x="521.80" y="385" font-family="Arial" font-size="13" fill="#273449">34.2%</text>
+<text x="40" y="427" font-family="Arial" font-size="15" fill="#273449">Singaran Pati</text>
+<rect x="320" y="410" width="59.92" height="23" rx="4" fill="#389d82"/>
+<text x="389.92" y="427" font-family="Arial" font-size="13" fill="#273449">10.7%</text>
+<text x="40" y="469" font-family="Arial" font-size="15" fill="#273449">Selebar</text>
+<rect x="320" y="452" width="0.00" height="23" rx="4" fill="#389d82"/>
+<text x="330.00" y="469" font-family="Arial" font-size="13" fill="#273449">0.0%</text>
+</svg>

@@ -1,0 +1,10 @@
+﻿kode,nama_wilayah,jumlah_skenario,jumlah_melebihi_ambang,persentase_skenario_genangan,rata_rata_puncak_genangan_mm,puncak_tertinggi_mm,kategori_simulasi
+1,Teluk Segara,2000,1477,73.85,51.25,119.19,Tinggi
+2,Ratu Samban,2000,1040,52.0,26.77,68.89,Sedang
+3,Ratu Agung,2000,685,34.25,18.01,53.47,Rendah
+4,Sungai Serut,2000,1512,75.6,59.02,131.67,Tinggi
+5,Gading Cempaka,2000,961,48.05,26.61,69.99,Sedang
+6,Muara Bangkahulu,2000,1347,67.35,47.92,114.27,Tinggi
+7,Selebar,2000,0,0.0,4.6,21.71,Rendah
+8,Kampung Melayu,2000,1374,68.7,51.81,122.57,Tinggi
+9,Singaran Pati,2000,214,10.7,10.35,39.49,Rendah

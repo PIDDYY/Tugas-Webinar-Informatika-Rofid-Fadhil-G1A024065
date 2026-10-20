@@ -1,0 +1,25 @@
+HASIL STUDI KASUS: MAKE SENSE OF DATA WITH ANALYSIS AND AI
+=======================================================
+Perusahaan                 : PT Maju Bersama (fiktif)
+Jumlah tagihan mentah      : 609
+Duplikat yang dibuang      : 9
+Jumlah tagihan bersih      : 600
+Tagihan terlambat          : 136 (22.7%)
+Pembagian data             : 480 latih, 120 uji
+
+Model dengan F1 terbaik    : Logistic Regression
+Hasil confusion matrix:
+- True Positive (TP)       : 20  -> terlambat dan diprediksi terlambat
+- False Negative (FN)      : 7  -> terlambat tetapi lolos dari deteksi
+- False Positive (FP)      : 30  -> tepat waktu tetapi dianggap terlambat
+- True Negative (TN)       : 63  -> tepat waktu dan diprediksi tepat waktu
+
+INTERPRETASI
+- Akurasi tinggi belum tentu berarti model bagus mendeteksi keterlambatan.
+- Recall memperlihatkan berapa banyak tagihan benar-benar terlambat yang terdeteksi.
+- Gunakan hasil prediksi sebagai prioritas pengingat pembayaran, bukan hukuman otomatis.
+- Ini DATA BUATAN, bukan data asli perusahaan atau hasil penelitian webinar.
+- Kolom 'hari_bayar_aktual' dilarang menjadi fitur: baru diketahui setelah tagihan dibayar.
+- Model diuji pada pemisahan acak tagihan; untuk produksi perlu validasi lebih kuat.
+
+Lihat: perbandingan_model.csv, grafik_perbandingan_model.png, dan contoh_prediksi_tagihan_baru.csv

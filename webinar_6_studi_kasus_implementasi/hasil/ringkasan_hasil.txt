@@ -1,0 +1,20 @@
+WEBINAR 6 - HASIL STUDI KASUS (DATA SINTETIS)
+==================================================
+Studi kasus: Klasifikasi penyebab LANGSUNG gangguan hutan
+Fitur Sentinel-1/2: PROKSI SIMULASI; bukan ekstraksi data satelit asli.
+Data latih: 336 | Data uji: 84 | Alert baru: 35
+KNN: k=5; split per kelas, seed=42; standardisasi hanya dari latih
+Akurasi pada data uji sintetis: 98.81%
+Macro F1 pada data uji sintetis: 0.988
+
+Distribusi prediksi pada alert baru:
+- Banjir / gangguan alami: 5
+- Kebakaran hutan: 5
+- Pembangunan jalan: 6
+- Penebangan selektif: 4
+- Pertambangan: 4
+- Pertanian skala besar: 5
+- Pertanian skala kecil: 6
+
+PENTING: Ini bukan sistem pemantauan operasional.
+Hasil tidak cocok dijadikan dasar keputusan kebijakan/penegakan hukum.

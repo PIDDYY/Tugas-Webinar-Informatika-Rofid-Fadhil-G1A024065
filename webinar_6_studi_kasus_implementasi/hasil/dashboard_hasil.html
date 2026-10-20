@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulasi Pemantauan Gangguan Hutan - Webinar 6</title>
+<style>
+:root{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#e9eff7;background:#0b1522;line-height:1.5}
+*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:32px 20px 64px}
+h1{margin:10px 0 6px;font-size:clamp(26px,4vw,38px);line-height:1.18}h2{margin:0 0 16px;font-size:19px}
+p{color:#b5c6d8;margin:8px 0}small{color:#adc4d7}.tag{display:inline-flex;background:#173e37;color:#93f0c3;padding:5px 12px;border-radius:30px;font-weight:700;font-size:12px;letter-spacing:.04em}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0}
+.card,.panel{background:#132337;border:1px solid #284158;border-radius:16px;padding:20px}
+.value{font-size:30px;font-weight:800;color:#f6fafd}.label{font-size:13px;color:#a9bfd0}
+.layout{display:grid;grid-template-columns:1.15fr 1fr;gap:15px}.barrow{display:grid;grid-template-columns:155px 1fr 32px;gap:10px;align-items:center;margin:12px 0;font-size:12px}
+.barbg{background:#263b4e;height:12px;overflow:hidden;border-radius:30px}.barbg>div{height:100%;border-radius:30px}
+svg{width:100%;height:auto;background:#0c1c2d;border:1px solid #395168;border-radius:12px}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:22px 0 12px}
+select,input{background:#172d42;color:#fff;border:1px solid #466178;border-radius:9px;padding:10px;max-width:100%}
+.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:610px}th,td{text-align:left;padding:11px;border-bottom:1px solid #30475d;font-size:13px}th{color:#b6d7dc}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:9px}
+.note{margin-top:18px;padding:14px 16px;border-left:3px solid #e5af60;background:#292b35;border-radius:6px;color:#f0d5a8;font-size:13px}
+footer{margin-top:30px;color:#93a7bb;font-size:12px}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.barrow{grid-template-columns:142px 1fr 28px}}
+</style></head><body><main>
+<div class="tag">STUDI KASUS WEBINAR 6 · DATA SIMULASI</div>
+<h1>Memahami penyebab perubahan hutan dengan AI sederhana</h1>
+<p>Klasifikasi penyebab langsung gangguan hutan dari fitur sintetis yang terinspirasi citra radar dan optik.</p>
+<div class="cards">
+<div class="card"><div class="label">Akurasi data uji</div><div class="value">98.8%</div><small>Data uji terpisah dari data latih</small></div>
+<div class="card"><div class="label">Macro F1</div><div class="value">0.988</div><small>Rata-rata F1 antar kelas</small></div>
+<div class="card"><div class="label">Alert simulasi</div><div class="value" id="jumlah-alert">35</div><small>Diprediksi menggunakan KNN (k=5)</small></div>
+</div>
+<div class="layout"><section class="panel"><h2>Persebaran hasil klasifikasi</h2><div class="barrow"><span>Pertanian skala kecil</span><div class="barbg"><div style="width:17.14%;background:#7ccf91"></div></div><strong>6</strong></div><div class="barrow"><span>Pertanian skala besar</span><div class="barbg"><div style="width:14.29%;background:#2f9960"></div></div><strong>5</strong></div><div class="barrow"><span>Penebangan selektif</span><div class="barbg"><div style="width:11.43%;background:#daa25b"></div></div><strong>4</strong></div><div class="barrow"><span>Pertambangan</span><div class="barbg"><div style="width:11.43%;background:#9879dc"></div></div><strong>4</strong></div><div class="barrow"><span>Pembangunan jalan</span><div class="barbg"><div style="width:17.14%;background:#57a1df"></div></div><strong>6</strong></div><div class="barrow"><span>Kebakaran hutan</span><div class="barbg"><div style="width:14.29%;background:#ea7368"></div></div><strong>5</strong></div><div class="barrow"><span>Banjir / gangguan alami</span><div class="barbg"><div style="width:14.29%;background:#60bacb"></div></div><strong>5</strong></div>
+<p><small>Jumlah alert baru per kelas hasil prediksi.</small></p></section>
+<section class="panel"><h2>Lokasi pada grid simulasi</h2>
+<svg viewBox="0 0 100 100" aria-label="Persebaran alert di grid sintetis" role="img">
+<g stroke="#21394e" stroke-width=".25"><path d="M20 0V100 M40 0V100 M60 0V100 M80 0V100 M0 20H100 M0 40H100 M0 60H100 M0 80H100"/></g>
+<circle data-category="Pertanian skala kecil" cx="28.00" cy="39.00" r="2.2" fill="#7ccf91" stroke="#102336" stroke-width="0.28"><title>ALT-01-02: Pertanian skala kecil</title></circle>
+<circle data-category="Kebakaran hutan" cx="75.00" cy="74.00" r="2.2" fill="#ea7368" stroke="#102336" stroke-width="0.28"><title>ALT-06-01: Kebakaran hutan</title></circle>
+<circle data-category="Pembangunan jalan" cx="44.00" cy="82.00" r="2.2" fill="#57a1df" stroke="#102336" stroke-width="0.28"><title>ALT-05-04: Pembangunan jalan</title></circle>
+<circle data-category="Pertanian skala besar" cx="15.00" cy="68.00" r="2.2" fill="#2f9960" stroke="#102336" stroke-width="0.28"><title>ALT-02-05: Pertanian skala besar</title></circle>
+<circle data-category="Banjir / gangguan alami" cx="61.00" cy="65.00" r="2.2" fill="#60bacb" stroke="#102336" stroke-width="0.28"><title>ALT-07-05: Banjir / gangguan alami</title></circle>
+<circle data-category="Pertanian skala kecil" cx="74.00" cy="43.00" r="2.2" fill="#7ccf91" stroke="#102336" stroke-width="0.28"><title>ALT-03-05: Pertanian skala kecil</title></circle>
+<circle data-category="Pertanian skala kecil" cx="60.00" cy="72.00" r="2.2" fill="#7ccf91" stroke="#102336" stroke-width="0.28"><title>ALT-01-03: Pertanian skala kecil</title></circle>
+<circle data-category="Banjir / gangguan alami" cx="36.00" cy="55.00" r="2.2" fill="#60bacb" stroke="#102336" stroke-width="0.28"><title>ALT-07-01: Banjir / gangguan alami</title></circle>
+<circle data-category="Pembangunan jalan" cx="49.00" cy="39.00" r="2.2" fill="#57a1df" stroke="#102336" stroke-width="0.28"><title>ALT-05-02: Pembangunan jalan</title></circle>
+<circle data-category="Pertambangan" cx="16.00" cy="65.00" r="2.2" fill="#9879dc" stroke="#102336" stroke-width="0.28"><title>ALT-04-02: Pertambangan</title></circle>
+<circle data-category="Banjir / gangguan alami" cx="12.00" cy="9.00" r="2.2" fill="#60bacb" stroke="#102336" stroke-width="0.28"><title>ALT-07-04: Banjir / gangguan alami</title></circle>
+<circle data-category="Pertambangan" cx="29.00" cy="20.00" r="2.2" fill="#9879dc" stroke="#102336" stroke-width="0.28"><title>ALT-04-01: Pertambangan</title></circle>
+<circle data-category="Penebangan selektif" cx="78.00" cy="71.00" r="2.2" fill="#daa25b" stroke="#102336" stroke-width="0.28"><title>ALT-03-03: Penebangan selektif</title></circle>
+<circle data-category="Penebangan selektif" cx="39.00" cy="47.00" r="2.2" fill="#daa25b" stroke="#102336" stroke-width="0.28"><title>ALT-03-04: Penebangan selektif</title></circle>
+<circle data-category="Pertanian skala besar" cx="27.00" cy="26.00" r="2.2" fill="#2f9960" stroke="#102336" stroke-width="0.28"><title>ALT-02-02: Pertanian skala besar</title></circle>
+<circle data-category="Kebakaran hutan" cx="70.00" cy="32.00" r="2.2" fill="#ea7368" stroke="#102336" stroke-width="0.28"><title>ALT-06-03: Kebakaran hutan</title></circle>
+<circle data-category="Kebakaran hutan" cx="92.00" cy="87.00" r="2.2" fill="#ea7368" stroke="#102336" stroke-width="0.28"><title>ALT-06-04: Kebakaran hutan</title></circle>
+<circle data-category="Pembangunan jalan" cx="75.00" cy="58.00" r="2.2" fill="#57a1df" stroke="#102336" stroke-width="0.28"><title>ALT-05-05: Pembangunan jalan</title></circle>
+<circle data-category="Banjir / gangguan alami" cx="39.00" cy="12.00" r="2.2" fill="#60bacb" stroke="#102336" stroke-width="0.28"><title>ALT-07-03: Banjir / gangguan alami</title></circle>
+<circle data-category="Pembangunan jalan" cx="40.00" cy="88.00" r="2.2" fill="#57a1df" stroke="#102336" stroke-width="0.28"><title>ALT-05-03: Pembangunan jalan</title></circle>
+<circle data-category="Kebakaran hutan" cx="56.00" cy="35.00" r="2.2" fill="#ea7368" stroke="#102336" stroke-width="0.28"><title>ALT-06-05: Kebakaran hutan</title></circle>
+<circle data-category="Pembangunan jalan" cx="67.00" cy="32.00" r="2.2" fill="#57a1df" stroke="#102336" stroke-width="0.28"><title>ALT-04-05: Pembangunan jalan</title></circle>
+<circle data-category="Pertanian skala kecil" cx="44.00" cy="68.00" r="2.2" fill="#7ccf91" stroke="#102336" stroke-width="0.28"><title>ALT-01-01: Pertanian skala kecil</title></circle>
+<circle data-category="Pertanian skala besar" cx="66.00" cy="88.00" r="2.2" fill="#2f9960" stroke="#102336" stroke-width="0.28"><title>ALT-02-04: Pertanian skala besar</title></circle>
+<circle data-category="Penebangan selektif" cx="27.00" cy="66.00" r="2.2" fill="#daa25b" stroke="#102336" stroke-width="0.28"><title>ALT-03-01: Penebangan selektif</title></circle>
+<circle data-category="Pertanian skala besar" cx="14.00" cy="88.00" r="2.2" fill="#2f9960" stroke="#102336" stroke-width="0.28"><title>ALT-02-03: Pertanian skala besar</title></circle>
+<circle data-category="Pertambangan" cx="92.00" cy="61.00" r="2.2" fill="#9879dc" stroke="#102336" stroke-width="0.28"><title>ALT-04-03: Pertambangan</title></circle>
+<circle data-category="Banjir / gangguan alami" cx="76.00" cy="33.00" r="2.2" fill="#60bacb" stroke="#102336" stroke-width="0.28"><title>ALT-07-02: Banjir / gangguan alami</title></circle>
+<circle data-category="Pertambangan" cx="28.00" cy="56.00" r="2.2" fill="#9879dc" stroke="#102336" stroke-width="0.28"><title>ALT-04-04: Pertambangan</title></circle>
+<circle data-category="Penebangan selektif" cx="9.00" cy="92.00" r="2.2" fill="#daa25b" stroke="#102336" stroke-width="0.28"><title>ALT-03-02: Penebangan selektif</title></circle>
+<circle data-category="Pembangunan jalan" cx="41.00" cy="34.00" r="2.2" fill="#57a1df" stroke="#102336" stroke-width="0.28"><title>ALT-05-01: Pembangunan jalan</title></circle>
+<circle data-category="Kebakaran hutan" cx="92.00" cy="76.00" r="2.2" fill="#ea7368" stroke="#102336" stroke-width="0.28"><title>ALT-06-02: Kebakaran hutan</title></circle>
+<circle data-category="Pertanian skala kecil" cx="91.00" cy="11.00" r="2.2" fill="#7ccf91" stroke="#102336" stroke-width="0.28"><title>ALT-01-05: Pertanian skala kecil</title></circle>
+<circle data-category="Pertanian skala besar" cx="30.00" cy="50.00" r="2.2" fill="#2f9960" stroke="#102336" stroke-width="0.28"><title>ALT-02-01: Pertanian skala besar</title></circle>
+<circle data-category="Pertanian skala kecil" cx="52.00" cy="90.00" r="2.2" fill="#7ccf91" stroke="#102336" stroke-width="0.28"><title>ALT-01-04: Pertanian skala kecil</title></circle></svg><p><small>Posisi titik adalah koordinat grid acak, BUKAN lokasi geografis atau peta yang sebenarnya.</small></p>
+</section></div>
+<section class="panel" style="margin-top:16px"><h2>Daftar alert baru</h2>
+<div class="toolbar"><label for="kategori">Kategori</label><select id="kategori"><option value="">Semua kategori</option><option value="Pertanian skala kecil">Pertanian skala kecil</option><option value="Pertanian skala besar">Pertanian skala besar</option><option value="Penebangan selektif">Penebangan selektif</option><option value="Pertambangan">Pertambangan</option><option value="Pembangunan jalan">Pembangunan jalan</option><option value="Kebakaran hutan">Kebakaran hutan</option><option value="Banjir / gangguan alami">Banjir / gangguan alami</option></select>
+<label for="cari">Cari ID</label><input id="cari" placeholder="Contoh: ALT-01" type="search"></div>
+<div class="tablewrap"><table><thead><tr><th>ID alert</th><th>Prediksi penyebab</th><th>Suara tetangga</th><th>Luas (ha)</th></tr></thead>
+<tbody><tr data-category="Pertanian skala kecil"><td>ALT-01-02</td><td><span class="dot" style="background:#7ccf91"></span>Pertanian skala kecil</td><td>100%</td><td>3.59</td></tr>
+<tr data-category="Kebakaran hutan"><td>ALT-06-01</td><td><span class="dot" style="background:#ea7368"></span>Kebakaran hutan</td><td>100%</td><td>66.21</td></tr>
+<tr data-category="Pembangunan jalan"><td>ALT-05-04</td><td><span class="dot" style="background:#57a1df"></span>Pembangunan jalan</td><td>100%</td><td>6.22</td></tr>
+<tr data-category="Pertanian skala besar"><td>ALT-02-05</td><td><span class="dot" style="background:#2f9960"></span>Pertanian skala besar</td><td>100%</td><td>76.99</td></tr>
+<tr data-category="Banjir / gangguan alami"><td>ALT-07-05</td><td><span class="dot" style="background:#60bacb"></span>Banjir / gangguan alami</td><td>100%</td><td>36.85</td></tr>
+<tr data-category="Pertanian skala kecil"><td>ALT-03-05</td><td><span class="dot" style="background:#7ccf91"></span>Pertanian skala kecil</td><td>60%</td><td>9.35</td></tr>
+<tr data-category="Pertanian skala kecil"><td>ALT-01-03</td><td><span class="dot" style="background:#7ccf91"></span>Pertanian skala kecil</td><td>100%</td><td>2.82</td></tr>
+<tr data-category="Banjir / gangguan alami"><td>ALT-07-01</td><td><span class="dot" style="background:#60bacb"></span>Banjir / gangguan alami</td><td>100%</td><td>32.50</td></tr>
+<tr data-category="Pembangunan jalan"><td>ALT-05-02</td><td><span class="dot" style="background:#57a1df"></span>Pembangunan jalan</td><td>100%</td><td>5.64</td></tr>
+<tr data-category="Pertambangan"><td>ALT-04-02</td><td><span class="dot" style="background:#9879dc"></span>Pertambangan</td><td>100%</td><td>49.85</td></tr>
+<tr data-category="Banjir / gangguan alami"><td>ALT-07-04</td><td><span class="dot" style="background:#60bacb"></span>Banjir / gangguan alami</td><td>100%</td><td>33.66</td></tr>
+<tr data-category="Pertambangan"><td>ALT-04-01</td><td><span class="dot" style="background:#9879dc"></span>Pertambangan</td><td>100%</td><td>37.22</td></tr>
+<tr data-category="Penebangan selektif"><td>ALT-03-03</td><td><span class="dot" style="background:#daa25b"></span>Penebangan selektif</td><td>100%</td><td>8.47</td></tr>
+<tr data-category="Penebangan selektif"><td>ALT-03-04</td><td><span class="dot" style="background:#daa25b"></span>Penebangan selektif</td><td>100%</td><td>12.34</td></tr>
+<tr data-category="Pertanian skala besar"><td>ALT-02-02</td><td><span class="dot" style="background:#2f9960"></span>Pertanian skala besar</td><td>100%</td><td>114.93</td></tr>
+<tr data-category="Kebakaran hutan"><td>ALT-06-03</td><td><span class="dot" style="background:#ea7368"></span>Kebakaran hutan</td><td>100%</td><td>56.93</td></tr>
+<tr data-category="Kebakaran hutan"><td>ALT-06-04</td><td><span class="dot" style="background:#ea7368"></span>Kebakaran hutan</td><td>100%</td><td>59.20</td></tr>
+<tr data-category="Pembangunan jalan"><td>ALT-05-05</td><td><span class="dot" style="background:#57a1df"></span>Pembangunan jalan</td><td>100%</td><td>9.32</td></tr>
+<tr data-category="Banjir / gangguan alami"><td>ALT-07-03</td><td><span class="dot" style="background:#60bacb"></span>Banjir / gangguan alami</td><td>100%</td><td>37.58</td></tr>
+<tr data-category="Pembangunan jalan"><td>ALT-05-03</td><td><span class="dot" style="background:#57a1df"></span>Pembangunan jalan</td><td>100%</td><td>5.38</td></tr>
+<tr data-category="Kebakaran hutan"><td>ALT-06-05</td><td><span class="dot" style="background:#ea7368"></span>Kebakaran hutan</td><td>100%</td><td>70.31</td></tr>
+<tr data-category="Pembangunan jalan"><td>ALT-04-05</td><td><span class="dot" style="background:#57a1df"></span>Pembangunan jalan</td><td>60%</td><td>31.04</td></tr>
+<tr data-category="Pertanian skala kecil"><td>ALT-01-01</td><td><span class="dot" style="background:#7ccf91"></span>Pertanian skala kecil</td><td>100%</td><td>4.08</td></tr>
+<tr data-category="Pertanian skala besar"><td>ALT-02-04</td><td><span class="dot" style="background:#2f9960"></span>Pertanian skala besar</td><td>100%</td><td>105.32</td></tr>
+<tr data-category="Penebangan selektif"><td>ALT-03-01</td><td><span class="dot" style="background:#daa25b"></span>Penebangan selektif</td><td>100%</td><td>12.90</td></tr>
+<tr data-category="Pertanian skala besar"><td>ALT-02-03</td><td><span class="dot" style="background:#2f9960"></span>Pertanian skala besar</td><td>100%</td><td>82.43</td></tr>
+<tr data-category="Pertambangan"><td>ALT-04-03</td><td><span class="dot" style="background:#9879dc"></span>Pertambangan</td><td>100%</td><td>44.52</td></tr>
+<tr data-category="Banjir / gangguan alami"><td>ALT-07-02</td><td><span class="dot" style="background:#60bacb"></span>Banjir / gangguan alami</td><td>100%</td><td>31.95</td></tr>
+<tr data-category="Pertambangan"><td>ALT-04-04</td><td><span class="dot" style="background:#9879dc"></span>Pertambangan</td><td>100%</td><td>45.31</td></tr>
+<tr data-category="Penebangan selektif"><td>ALT-03-02</td><td><span class="dot" style="background:#daa25b"></span>Penebangan selektif</td><td>100%</td><td>8.81</td></tr>
+<tr data-category="Pembangunan jalan"><td>ALT-05-01</td><td><span class="dot" style="background:#57a1df"></span>Pembangunan jalan</td><td>100%</td><td>3.87</td></tr>
+<tr data-category="Kebakaran hutan"><td>ALT-06-02</td><td><span class="dot" style="background:#ea7368"></span>Kebakaran hutan</td><td>100%</td><td>53.32</td></tr>
+<tr data-category="Pertanian skala kecil"><td>ALT-01-05</td><td><span class="dot" style="background:#7ccf91"></span>Pertanian skala kecil</td><td>100%</td><td>4.13</td></tr>
+<tr data-category="Pertanian skala besar"><td>ALT-02-01</td><td><span class="dot" style="background:#2f9960"></span>Pertanian skala besar</td><td>100%</td><td>94.72</td></tr>
+<tr data-category="Pertanian skala kecil"><td>ALT-01-04</td><td><span class="dot" style="background:#7ccf91"></span>Pertanian skala kecil</td><td>100%</td><td>4.30</td></tr></tbody></table></div>
+<div class="note"><strong>Catatan penting:</strong> Semua data dan grid adalah buatan untuk belajar, bukan pemantauan hutan sungguhan. "Suara tetangga" menggambarkan persentase voting model KNN, bukan probabilitas maupun tingkat kepercayaan ilmiah. Model ini TIDAK dapat digunakan untuk penegakan hukum atau keputusan lingkungan nyata.</div>
+</section><footer>336 data latih · 84 data uji · Python standar tanpa library eksternal</footer>
+</main><script>
+const sel=document.getElementById('kategori'),cari=document.getElementById('cari');
+function filter(){
+  const kategori=sel.value,query=cari.value.trim().toLowerCase();let count=0;
+  document.querySelectorAll('tbody tr').forEach(tr=>{
+    const ok=(!kategori||tr.dataset.category===kategori)&&tr.cells[0].textContent.toLowerCase().includes(query);
+    tr.hidden=!ok;if(ok)count++;
+  });
+  document.querySelectorAll('svg circle[data-category]').forEach(c=>{c.style.opacity=(!kategori||c.dataset.category===kategori)?1:.08});
+  document.getElementById('jumlah-alert').textContent=count;
+}
+sel.addEventListener('change',filter);cari.addEventListener('input',filter);
+</script></body></html>

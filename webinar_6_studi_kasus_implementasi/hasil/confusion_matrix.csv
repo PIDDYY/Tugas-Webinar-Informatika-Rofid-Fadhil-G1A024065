@@ -1,0 +1,8 @@
+aktual,Banjir / gangguan alami,Kebakaran hutan,Pembangunan jalan,Penebangan selektif,Pertambangan,Pertanian skala besar,Pertanian skala kecil
+Banjir / gangguan alami,12,0,0,0,0,0,0
+Kebakaran hutan,0,12,0,0,0,0,0
+Pembangunan jalan,0,0,12,0,0,0,0
+Penebangan selektif,0,0,0,11,0,0,1
+Pertambangan,0,0,0,0,12,0,0
+Pertanian skala besar,0,0,0,0,0,12,0
+Pertanian skala kecil,0,0,0,0,0,0,12
